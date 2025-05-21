@@ -1,5 +1,5 @@
-# OZO PowerShell Script Template
+# OZO AD Active Users Report Change Log
 
-|Date|Version|Comment|
-|----|-------|-------|
-|YYYY-MM-DD|1.0.0|Initial release.|
+|Date|Version|Comments|
+|----|-------|--------|
+|2025-May-21|1.0.0|Initial release|
