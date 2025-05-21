@@ -109,7 +109,7 @@ Class OZOADActiveUsers {
         # Determine if we found at least one user
         If ($this.activeADUsers.Count -gt 0) {
             # We found at least one user; export desired properties to Excel
-            $this.activeUsers | Select-Object -Property Surname,
+            $this.activeADUsers | Select-Object -Property Surname,
             GivenName,
             SamAccountName,
             PasswordLastSet,
@@ -119,7 +119,7 @@ Class OZOADActiveUsers {
             Office,
             Department | Export-Excel -Path $this.excelPath
             # Log a help message
-            $this.ozoLogger.Log(("Export Complete. Please see " + $this.excelPath + "."),"Information")
+            $this.ozoLogger.Write(("Export Complete. Please see " + $this.excelPath + "."),"Information")
         }
     }
 }

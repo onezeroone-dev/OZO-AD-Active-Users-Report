@@ -20,18 +20,13 @@ Install-Script ozo-ad-active-users-report
 ## Usage
 ```powershell
 ozo-ad-active-users-report
-    -Mail   <String>
     -OutDir <String>
 ```
 
 ## Parameters
 |Parameter|Description|
 |---------|-----------|
-|`Mail`|Email address to [attempt to\] send the Excel report to.|
 |`OutDir`|Directory for the Excel report. Defaults to the current directory.|
-
-## Outputs
-None.
 
 ## Notes
 Empty cells in the password status field indicates the password has never been set.
